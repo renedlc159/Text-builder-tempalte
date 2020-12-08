@@ -1,0 +1,115 @@
+:root {
+  --Primary: #000;
+}
+
+body {
+  background-color: var(--Primary);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+
+}
+
+/* MAIN */
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#main .background-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(-45deg, #00000000, #f0f0f025);
+}
+
+/* #main .background-image img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+} */
+
+#main .background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .background-image svg {
+transition: all 0.3s ease-in-out;
+}
+
+@keyframes animation-text {
+  to { 
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes color-text {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fff;
+    filter: drop-shadow( -5px 0px 5px #ffffff60);
+
+  }
+}
+
+#main #logo {
+  fill: transparent;
+  animation: color-text 0.5s ease forwards 3.5s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 1032.83px;
+  stroke-dashoffset: 1032.83px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 572.83px;
+  stroke-dashoffset : 572.83px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 741.77px;
+  stroke-dashoffset : 741.77px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 1481.569px;
+  stroke-dashoffset : 1481.569px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 863.61px;
+  stroke-dashoffset : 863.61px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 1036.63px;
+  stroke-dashoffset : 1036.63px;
+  animation: animation-text 3s ease forwards 0.3s;
+}
+
+#main .letters {
+  color: #fff;  
+}
